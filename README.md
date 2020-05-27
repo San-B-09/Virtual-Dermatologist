@@ -11,9 +11,9 @@ Dermnet is a publicly available dataset of more than 23000 dermatologist-curated
 `dermnet_scraping.ipynb` keeps has code to fetch water-marked images (relatively low resolution) automatically from DermNet.
 
 In the codes, several helpful modules were used:
-* Requests
-* Pillow
-* BeautifulSoup
-* io
-* os
-* shutil
+* [Requests](https://requests.readthedocs.io/en/master/)
+* [Pillow](https://pillow.readthedocs.io/en/3.1.x/reference/Image.html)
+* [BeautifulSoup](https://pillow.readthedocs.io/en/3.1.x/reference/Image.html)
+* [io](https://docs.python.org/3/library/io.html)
+* [os](https://docs.python.org/3/library/os.html)
+* [shutil](https://docs.python.org/3/library/shutil.html)
