@@ -8,7 +8,7 @@ Dermnet is a publicly available dataset of more than 23000 dermatologist-curated
 
 **Overview**
 
-dermnet_scraping.ipynb keeps has code to fetch water-marked images (relatively low resolution) automatically from DermNet.
+`dermnet_scraping.ipynb` keeps has code to fetch water-marked images (relatively low resolution) automatically from DermNet.
 
 In the codes, several helpful modules were used:
 * Requests
