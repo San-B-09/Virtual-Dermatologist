@@ -17,3 +17,6 @@ In the codes, several helpful modules were used:
 * [io](https://docs.python.org/3/library/io.html)
 * [os](https://docs.python.org/3/library/os.html)
 * [shutil](https://docs.python.org/3/library/shutil.html)
+
+Following flow diagram describe brief overview of dermnet scraper:
+![Dermnet_Scraper](https://github.com/San-B-09/Virtual-Dermatologist/blob/master/Images/dermnet-scraper.png)
