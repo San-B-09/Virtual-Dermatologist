@@ -20,3 +20,23 @@ In the codes, several helpful modules were used:
 
 Following flow diagram describe brief overview of dermnet scraper:
 ![Dermnet_Scraper](https://github.com/San-B-09/Virtual-Dermatologist/blob/master/Images/dermnet-scraper.png)
+
+## Classification Pipeline
+### Brief Overview of System
+The proposed methodology, depicted in following figure is based on two primary parts, Image pre-processing unit and a Classifier unit. The image processor unit will augment the sample/image and then the image will be segmented into different segments. Then the image will be sent to the convolutional classifier for feature extraction and further classification.
+
+- **Image Processing Unit**: This unit focuses on the affected part by converting the image into an RGB form. Extracting feature extraction being a major step in the classification problem, they are the core of the image classification problem. So, both the training and the testing image are resized into proper format before sending it to the classifier unit. Furthermore, all the training images are passed through the rotational and positional invariant i.e. they are shifted vertically or horizontally to right or left, rotated clockwise or anti-clockwise by 10% or scaled in or out, thus sustaining the process of efficiently training of the model.
+
+-	**Classification Unit**: This unit classifies the images into pre-defined classes using a convolutional neural network algorithm and SoftMax classifier for multi-class classification.
+
+`skin_disease_classification.ipynb` contains following functions:
+- `load_unique()` - It loads all the unique labels for loading data
+- `plot_image()` - Prints any image present in dataset
+- `load_data()` - loads all the images and their respective labels and split the data into training and testing set
+- `create_model()` - CNN architecture is defined here
+- 'plot_accuracy() & plot_loss()' - These functions plot the accuracy and loss curve
+
+In further code, confusion matrix is visualized in the form of heatmap and model is saved in tflite format to be used in aandroid applicaiton as well
+
+## Results
+This research comprises of six diagnosis classes as mentioned above. We've successfully achieved an accuracy of 93.063% on a testing dataset containing a total of 180 images of six different classes. Also, the loss function plot shown in `skin_disease_classification.ipynb` states the avoidance of overfitting throughout the training. The AUC score obtained from training is 0.841664.
