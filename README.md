@@ -2,7 +2,7 @@
 
 An automated dermatological diagnostic system using a deep learning. The entire system works on the two mutually dependent steps. The first is preprocessing of the image of that part of the skin that is infected and the latter is used to recognize the disease. The system gives an accuracy of 93.063% while testing on a total of 180 image samples for six disease classes.
 
-**The complete research paper can be found here:** https://link.springer.com/chapter/10.1007/978-3-030-48118-6_6#citeas
+**The complete research paper can be found here:** https://link.springer.com/chapter/10.1007/978-3-030-48118-6_6
 
 ## DermNet-image-scraper
 ### DermNet
